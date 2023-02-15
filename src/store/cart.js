@@ -16,6 +16,7 @@ export default defineStore("cart",{
             })
             if(quantity===0&&index>=-1){
                 this.prodLists.splice(index,1)
+                return
             }
             if(index>-1){
                 this.prodLists[index].quantity+=quantity
